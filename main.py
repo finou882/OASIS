@@ -27,7 +27,7 @@ pipe = pipeline(
     device=device,
     return_timestamps=True
 )
-
+ 
 def record_audio(duration=5, sample_rate=16000):
     # PyAudioの設定
     p = pyaudio.PyAudio()

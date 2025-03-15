@@ -1,7 +1,8 @@
 from llama_cpp import Llama
 import json
+import time
 import os
-import playsound
+from playsound import playsound
 from pathlib import Path
 import requests
 
@@ -35,6 +36,4 @@ path = "tmp.wav"  # 保存場所
 out = Path(path)
 out.write_bytes(wav)
 # 再生
-playsound.playsound("tmp.wav")
-# ファイルの削除
-os.remove("tmp.wav")
+playsound("tmp.wav")
